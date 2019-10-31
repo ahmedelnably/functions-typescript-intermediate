@@ -25,10 +25,10 @@ jobs:
     #  with:
     #    creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    - name: Setup Node 8.x
+    - name: Setup Node 10.x
       uses: actions/setup-node@v1
       with:
-        node-version: '8.x'
+        node-version: '10.x'
 
     - name: 'Run npm'
       shell: bash
