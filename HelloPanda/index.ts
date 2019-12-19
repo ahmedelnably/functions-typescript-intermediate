@@ -8,7 +8,7 @@ const run: AzureFunction = async function (context: Context, req: HttpRequest): 
     // (Note: any function in the function app can import these methods) 
     const url = await getPandaImage(context.log);
     const fact = getPandaFact(context.log);
-
+    context.log('JavaScript HTTP trigger function processed a request.');
     // Extremely simple content
     return {
         status: 200,
